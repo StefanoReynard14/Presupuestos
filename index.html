@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preupuestos</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Indique sus preferencias</h1>
+        <form id="searchForm">
+            <label for="brand">Marca:</label>
+            <input type="text" id="brand" placeholder="Ingrese la marca">
+
+            <label for="model">Modelo:</label>
+            <input type="text" id="model" placeholder="Ingrese el modelo">
+
+            <label for="budget">Presupuesto:</label>
+            <input type="number" id="budget" placeholder="Ingrese el presupuesto">
+
+            <button type="button" onclick="searchBudgets()">Buscar</button>
+        </form>
+
+        <div id="results">
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
